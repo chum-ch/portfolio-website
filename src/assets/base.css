@@ -19,6 +19,7 @@
   --vt-c-text-light-2: rgba(60, 60, 60, 0.66);
   --vt-c-text-dark-1: var(--vt-c-white);
   --vt-c-text-dark-2: rgba(235, 235, 235, 0.64);
+  --gradient: (to bottom right, #26C2D7, #35CDA9);
 }
 
 /* semantic color variables for this project */
@@ -61,7 +62,8 @@
 body {
   min-height: 100vh;
   color: var(--color-text);
-  background: var(--color-background);
+  /* background: linear-gradient(var(--gradient)); */
+  background: linear-gradient(to top left, #26C2D7, #35CDA9, #0A285D);
   transition:
     color 0.5s,
     background-color 0.5s;
