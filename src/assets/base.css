@@ -1,5 +1,9 @@
 /* color palette from <https://github.com/vuejs/theme> */
 :root {
+  --fb: #1877f2;
+  --yt: #ff0000;
+  --tiktok: #404040;
+  --github: #1B1F23;
   --vt-c-white: #ffffff;
   --vt-c-white-soft: #f8f8f8;
   --vt-c-white-mute: #f2f2f2;
