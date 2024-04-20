@@ -51,23 +51,11 @@
   }
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-  font-weight: normal;
-}
 
 body {
-  min-height: 100vh;
   color: var(--color-text);
   /* background: linear-gradient(var(--gradient)); */
-  background: linear-gradient(to top left, #26C2D7, #35CDA9, #0A285D);
-  transition:
-    color 0.5s,
-    background-color 0.5s;
-  line-height: 1.6;
+  background: linear-gradient(to top right, #26C2D7, #35CDA9, #0A285D);
   font-family:
     Inter,
     -apple-system,
@@ -81,8 +69,19 @@ body {
     'Droid Sans',
     'Helvetica Neue',
     sans-serif;
-  font-size: 15px;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Styles for phones (up to 576px) */
+@media (max-width: 576px) {
+  
+}
+
+/* Styles for computers and laptops (between 577px and 1200px) */
+@media (min-width: 577px) and (max-width: 1200px) {
+  /* Styles specific to computers and laptops */
+}
+
+/* Styles for larger screens (above 1200px) */
+@media (min-width: 1201px) {
+  /* Styles specific to larger screens */
 }

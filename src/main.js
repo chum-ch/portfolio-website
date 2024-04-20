@@ -1,11 +1,28 @@
-import './assets/main.css'
+import "./assets/main.css";
 
-import { createApp } from 'vue'
-import App from './App.vue'
-import router from './router'
+//in main.js
+import { createApp } from "vue";
+import App from "./App.vue";
+import router from "./router";
+import PrimeVue from "primevue/config";
 
-const app = createApp(App)
+import "primevue/resources/themes/aura-light-green/theme.css";
+import "primeflex/primeflex.css";
+//icons
+import 'primeicons/primeicons.css'
 
-app.use(router)
+// Primevue componet
+import ButtonPrimevue from 'primevue/button';
 
-app.mount('#app')
+// Custom component
+import CustomNavigation from "./components/customs/Navigation.vue";
+
+const app = createApp(App);
+
+// Primevue
+app.component("ButtonPrimevue", ButtonPrimevue);
+// Custom
+app.component("CustomNavigation", CustomNavigation);
+app.use(router);
+app.use(PrimeVue);
+app.mount("#app");
