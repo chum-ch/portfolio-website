@@ -73,5 +73,11 @@ nav a {
 
 nav a:hover {
   background: rgba(#35cda9, 0.4);
+  color: var(--vt-c-white);
+}
+@media (max-width: 576px) {
+  nav {
+    justify-content: center;
+  }
 }
 </style>

@@ -83,4 +83,13 @@ span {
 h3 i{
   margin: 0rem .5rem;
 }
+@media (max-width: 576px) {
+  .logo {
+    width: 80%;
+    height: 80%;
+  }
+  .text-center {
+    font-size: 10px;
+  }
+}
 </style>
