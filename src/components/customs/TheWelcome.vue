@@ -25,7 +25,7 @@ defineExpose({});
 <template>
   <div class="welcome">
     <div class="profile grid">
-      <div class="col-12 md:col-3">
+      <div class="col-12 md:col-12 lg:col-3">
         <div class="text-center mt-5">
           <img
             alt="profile"
@@ -36,7 +36,7 @@ defineExpose({});
           />
         </div>
       </div>
-      <div class="col-12 md:col-8">
+      <div class="col-12 md:col-12 lg:col-8">
         <div class="text-center">
           <h1 class="uppercase">Welcom to my portfolio website</h1>
           <h2 class="uppercase">
@@ -108,6 +108,9 @@ h3 i {
 }
 .pi-github:hover {
   color: var(--github);
+}
+@media (max-width: 1200px) {
+  
 }
 @media (max-width: 576px) {
   .welcome {
