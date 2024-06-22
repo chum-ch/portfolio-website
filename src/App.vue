@@ -19,19 +19,13 @@ defineProps({
   <header>
     <CustomNavigation/>
   </header>
-  <div class="containers">
+  <div class="containers m-7 min-h-screen">
     <RouterView />
   </div>
+    <CustomFooter/>
 </template>
 
 <style scoped>
-.containers {
-  /* Add some height to create a scrollable area */
-  height: 100vh;
-  padding:0 5rem;
-  overflow-y: scroll;
-  text-align: justify;
-}
 @media (max-width: 576px) {
   .containers {
     padding: 0;

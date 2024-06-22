@@ -16,6 +16,7 @@ import ButtonPrimevue from 'primevue/button';
 
 // Custom component
 import CustomNavigation from "./components/customs/Navigation.vue";
+import CustomFooter from "./components/customs/Footer.vue";
 
 const app = createApp(App);
 
@@ -23,6 +24,7 @@ const app = createApp(App);
 app.component("ButtonPrimevue", ButtonPrimevue);
 // Custom
 app.component("CustomNavigation", CustomNavigation);
+app.component("CustomFooter", CustomFooter);
 app.use(router);
 app.use(PrimeVue);
 app.mount("#app");

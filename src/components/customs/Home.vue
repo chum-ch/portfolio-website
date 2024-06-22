@@ -23,9 +23,9 @@ defineExpose({});
 </script>
 
 <template>
-  <div class="welcome">
-    <div class="profile grid">
-      <div class="col-12 md:col-12 lg:col-3">
+  <div class="grid m-0 welcome">
+    <!-- <div class="profile"> -->
+      <div class="xl:col-4 md:col-12 col-12 profile">
         <div class="text-center mt-5">
           <img
             alt="profile"
@@ -36,9 +36,9 @@ defineExpose({});
           />
         </div>
       </div>
-      <div class="col-12 md:col-12 lg:col-8">
-        <div class="text-center">
-          <h1 class="uppercase">Welcom to my portfolio website</h1>
+      <div class="xl:col-8 md:col-12 col-12 xl:mt-6">
+        <div class="text-center line-height-4">
+          <h1 class="uppercase">Welcome to my portfolio website</h1>
           <h2 class="uppercase">
             <p>
               <span>I'</span>
@@ -51,7 +51,7 @@ defineExpose({});
               <span>Web Developer</span>
             </p>
           </h2>
-          <div class="media">
+          <div class="media mb-4">
             <h3>
               <p>Follow me on</p>
               <span>
@@ -76,18 +76,14 @@ defineExpose({});
               </span>
             </h3>
           </div>
-          <ButtonPrimevue label="Download CV" />
+          <ButtonPrimevue label="Download CV" class=""/>
         </div>
       </div>
-    </div>
+    <!-- </div> -->
   </div>
 </template>
 
 <style scoped>
-.welcome {
-  margin: 5rem 0;
-  height: 75vh;
-}
 .uppercase,
 span {
   letter-spacing: 0.2rem;

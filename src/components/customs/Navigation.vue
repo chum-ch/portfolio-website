@@ -35,23 +35,29 @@ defineExpose({});
 
 <template>
   <nav>
-    <RouterLink to="/">Home</RouterLink>
-    <RouterLink to="/about">About</RouterLink>
-    <RouterLink to="/contact">Contact</RouterLink>
-    <RouterLink to="/profile">Profile</RouterLink>
+    <div class="menu">
+      <RouterLink to="/">Home</RouterLink>
+      <RouterLink to="/about">About</RouterLink>
+      <RouterLink to="/contact">Contact</RouterLink>
+      <RouterLink to="/profile">Profile</RouterLink>
+    </div>
   </nav>
 </template>
 
 <style scoped>
 nav {
-  display: flex;
-  justify-content: flex-end;
-  position: sticky;
+  position: fixed;
   top: 0;
+  width: 100%;
   z-index: 999;
   padding: 0.5rem;
+  backdrop-filter: blur(10px);
+  /* background: #000; */
 }
-
+.menu {
+  display: flex;
+  justify-content: flex-end;
+}
 nav a.router-link-exact-active {
   border: 2px double #35cda9;
   color: var(--vt-c-white);

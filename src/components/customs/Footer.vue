@@ -1,5 +1,7 @@
 <script setup>
 import { onMounted, reactive, ref, inject, provide, getCurrentInstance, watch } from 'vue'
+const date = new Date();
+const currentYear = date.getFullYear();
 onMounted(()=>{});
 defineEmits(['']);
 defineProps({
@@ -15,10 +17,18 @@ defineExpose({});
 </script>
 
 <template>
-  <div class="greetings">
-    <h1 class="green">{{ msg }}</h1>
+  <div class="text-center footer">
+    <p> &copy; {{ currentYear }} YOEURN Chum. All rights reserved. </p>
   </div>
 </template>
 
 <style scoped>
+.footer {
+  /* position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 999;
+  padding: 0.5rem;
+  backdrop-filter: blur(10px); */
+}
 </style>
