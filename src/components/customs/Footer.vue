@@ -18,7 +18,7 @@ defineExpose({});
 
 <template>
   <div class="text-center footer">
-    <p> &copy; {{ currentYear }} YOEURN Chum. All rights reserved. </p>
+    <p> <span class="text-orange-500">&copy;</span> {{ currentYear }} YOEURN Chum. All rights reserved. </p>
   </div>
 </template>
 
