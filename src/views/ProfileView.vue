@@ -25,37 +25,84 @@ defineExpose({});
 <template>
   <div class="profile">
     <ul class="time-line">
-      <li style="--accent-color: #41516c">
+      <li class="li" style="--accent-color: #01204E">
         <div class="date">2022 - Present</div>
         <div class="title">
           <h3>Web developer</h3>
           <small class="text-xs">AIML Technologies Co.,Ltd</small>
         </div>
         <div class="descr">
-          <p>With probation 3 months at <span>AIML,</span> I ......</p>
+          <ul class="ml-3">
+            <li>
+              Back-end
+              <ul class="ml-3">
+                <li>Maintain employment module</li>
+                <li>Build APIs, APIs doc (OpenAPI), AWS, Dynamodb</li>
+                <li>Deploy project.</li>
+              </ul>
+            </li>
+            <li>
+              Probation 3 months
+              <ul class="ml-3">
+                <li>Full-stack on work schedule module.</li>
+                <li>
+                  Learnt basic programming and work with line-manager, product
+                  team, cow-worker.
+                </li>
+                <li>Company's rule</li>
+                <li>Agile employee</li>
+              </ul>
+            </li>
+          </ul>
         </div>
       </li>
-      <li style="--accent-color: #fbca3e">
+      <li class="li" style="--accent-color: #fbca3e">
         <div class="date">2019 - 2021</div>
         <div class="title">
           <h3>Associate Degree's</h3>
           <small class="text-xs">Passerelles Numeriques Cambodia (PNC)</small>
         </div>
         <div class="descr">
-          <p>Programming language HTML, CSS, Python, Node.js, Vue.js ......</p>
+          <ul class="ml-3">
+            <li>
+              Programming languages
+              <ul class="ml-3">
+                <li>HTML, CSS, Bootstrap, and Vuetify.</li>
+                <li>Vue.js, Express.js, and Node.js.</li>
+                <li>JavaScript, Python, Laravel, PHP</li>
+              </ul>
+            </li>
+            <li>
+              School project
+              <ul class="ml-3">
+                <li>Python: sokoban</li>
+                <li>Build static website HTML CSS.</li>
+                <li>Chart board</li>
+              </ul>
+            </li>
+            <li>Online company visit partner of PNC</li>
+            <li>
+              Professional life, problem solving, communication, and leadership.
+            </li>
+          </ul>
         </div>
       </li>
-      <li style="--accent-color: #e24a68">
+      <li class="li" style="--accent-color: #e24a68">
         <div class="date">2016 - 2019</div>
         <div class="title">
           <h3>Hight School Certificate</h3>
           <small class="text-xs">Chom Raoen Vichea Hight School (CRV)</small>
         </div>
         <div class="descr">
-          <p>I learnt ...</p>
+          <ul class="ml-3">
+            <li>Leader grade</li>
+            <li>Join event community charity blood donation few times.</li>
+            <li>Khmer Outstanding Student Exam</li>
+            <li>Sharing and teaching to children in the primary school.</li>
+          </ul>
         </div>
       </li>
-      <li style="--accent-color: #1b5f8c">
+      <li class="li" style="--accent-color: #1b5f8c">
         <div class="date">2013 - 2016</div>
         <div class="title">
           <h3>Secondary School</h3>
@@ -65,10 +112,10 @@ defineExpose({});
           <p>I got number 1 of examination Khmer of Svay Antor district.</p>
         </div>
       </li>
-      <li style="--accent-color: #4cadad">
+      <li class="li" style="--accent-color: #4cadad">
         <div class="date">2007 - 2013</div>
         <div class="title">
-          <h3>Pirmary School</h3>
+          <h3>Primary School</h3>
           <small class="text-xs">R-ka Meas Samki Meanchey</small>
         </div>
         <div class="descr">
@@ -102,11 +149,6 @@ body {
   color: var(--color);
   background: var(--bgColor);
 }
-
-h1 {
-  text-align: center;
-}
-
 .time-line {
   --col-gap: 2rem;
   --row-gap: 2rem;
@@ -132,12 +174,12 @@ h1 {
 /* columns*/
 
 /* row gaps */
-.time-line li:not(:last-child) {
+.time-line .li:not(:last-child) {
   margin-bottom: var(--row-gap);
 }
 
 /* card */
-.time-line li {
+.time-line .li {
   grid-column: 2;
   --inlineP: 1.5rem;
   margin-inline: var(--inlineP);
@@ -149,7 +191,7 @@ h1 {
 }
 
 /* date */
-.time-line li .date {
+.time-line .li .date {
   --dateH: 3rem;
   height: var(--dateH);
   margin-inline: calc(var(--inlineP) * -1);
@@ -169,7 +211,7 @@ h1 {
 }
 
 /* date flap */
-.time-line li .date::before {
+.time-line .li .date::before {
   content: "";
   width: var(--inlineP);
   aspect-ratio: 1;
@@ -182,7 +224,7 @@ h1 {
 }
 
 /* circle */
-.time-line li .date::after {
+.time-line .li .date::after {
   content: "";
   position: absolute;
   width: 1rem;
@@ -197,26 +239,26 @@ h1 {
 }
 
 /* title descr */
-.time-line li .title,
-.time-line li .descr {
+.time-line .li .title,
+.time-line .li .descr {
   background: var(--bgColor);
   position: relative;
   padding-inline: 1.5rem;
 }
-.time-line li .title {
+.time-line .li .title {
   overflow: hidden;
   padding-block-start: 1.5rem;
   padding-block-end: 1rem;
   font-weight: 500;
 }
-.time-line li .descr {
+.time-line .li .descr {
   padding-block-end: 1.5rem;
   font-weight: 300;
 }
 
 /* shadows */
-.time-line li .title::before,
-.time-line li .descr::before {
+.time-line .li .title::before,
+.time-line .li .descr::before {
   content: "";
   position: absolute;
   /* background: rgba(0, 0, 0, 0.5); */
@@ -226,11 +268,11 @@ h1 {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   transform: translate(-50%, 50%);
 }
-.time-line li .title::before {
+.time-line .li .title::before {
   bottom: calc(100% + 0.125rem);
 }
 
-.time-line li .descr::before {
+.time-line .li .descr::before {
   z-index: -1;
   bottom: 0.25rem;
 }
@@ -242,28 +284,28 @@ h1 {
   .time-line::before {
     grid-column: 2;
   }
-  .time-line li:nth-child(odd) {
+  .time-line .li:nth-child(odd) {
     grid-column: 1;
   }
-  .time-line li:nth-child(even) {
+  .time-line .li:nth-child(even) {
     grid-column: 3;
   }
 
   /* start second card */
-  .time-line li:nth-child(2) {
+  .time-line .li:nth-child(2) {
     grid-row: 2/4;
   }
 
-  .time-line li:nth-child(odd) .date::before {
+  .time-line .li:nth-child(odd) .date::before {
     clip-path: polygon(0 0, 100% 0, 100% 100%);
     left: 0;
   }
 
-  .time-line li:nth-child(odd) .date::after {
+  .time-line .li:nth-child(odd) .date::after {
     transform: translate(-50%, -50%);
     left: calc(100% + var(--col-gap) + var(--line-w) / 2);
   }
-  .time-line li:nth-child(odd) .date {
+  .time-line .li:nth-child(odd) .date {
     border-radius: 0 calc(var(--dateH) / 2) calc(var(--dateH) / 2) 0;
   }
 }
