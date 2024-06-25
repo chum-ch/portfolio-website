@@ -82,7 +82,7 @@ nav a:hover {
   color: var(--vt-c-white);
 }
 @media (max-width: 576px) {
-  nav {
+  .menu {
     justify-content: center;
   }
 }
