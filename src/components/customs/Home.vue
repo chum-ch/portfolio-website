@@ -114,11 +114,11 @@ h3 i {
   margin: 0 0 3rem 0;
 }
   .logo {
-    width: 80%;
-    height: 80%;
+    width: 100%;
+    height: 100%;
   }
   .text-center {
-    font-size: 10px;
+    font-size: 9px;
   }
 }
 </style>
