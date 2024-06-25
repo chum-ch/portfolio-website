@@ -25,7 +25,7 @@ defineExpose({});
 <template>
   <div class="profile">
     <ul class="time-line">
-      <li class="li" style="--accent-color: #01204E">
+      <li class="li" style="--accent-color: #01204e">
         <div class="date">2022 - Present</div>
         <div class="title">
           <h3>Web developer</h3>
@@ -36,8 +36,8 @@ defineExpose({});
             <li>
               Back-end
               <ul class="ml-3">
-                <li>Maintain employment module</li>
-                <li>Build APIs, APIs doc (OpenAPI), AWS, Dynamodb</li>
+                <li>Maintain employment module.</li>
+                <li>Build APIs, APIs doc (OpenAPI), AWS, Dynamodb.</li>
                 <li>Deploy project.</li>
               </ul>
             </li>
@@ -49,8 +49,8 @@ defineExpose({});
                   Learnt basic programming and work with line-manager, product
                   team, cow-worker.
                 </li>
-                <li>Company's rule</li>
-                <li>Agile employee</li>
+                <li>Company's rule.</li>
+                <li>Agile employee.</li>
               </ul>
             </li>
           </ul>
@@ -69,18 +69,18 @@ defineExpose({});
               <ul class="ml-3">
                 <li>HTML, CSS, Bootstrap, and Vuetify.</li>
                 <li>Vue.js, Express.js, and Node.js.</li>
-                <li>JavaScript, Python, Laravel, PHP</li>
+                <li>JavaScript, Python, Laravel, PHP.</li>
               </ul>
             </li>
             <li>
               School project
               <ul class="ml-3">
-                <li>Python: sokoban</li>
+                <li>Python: sokoban.</li>
                 <li>Build static website HTML CSS.</li>
-                <li>Chart board</li>
+                <li>Chart board.</li>
               </ul>
             </li>
-            <li>Online company visit partner of PNC</li>
+            <li>Online company visit partner of PNC.</li>
             <li>
               Professional life, problem solving, communication, and leadership.
             </li>
@@ -95,9 +95,9 @@ defineExpose({});
         </div>
         <div class="descr">
           <ul class="ml-3">
-            <li>Leader grade</li>
+            <li>Leader grade.</li>
             <li>Join event community charity blood donation few times.</li>
-            <li>Khmer Outstanding Student Exam</li>
+            <li>Khmer Outstanding Student Exam.</li>
             <li>Sharing and teaching to children in the primary school.</li>
           </ul>
         </div>
@@ -109,7 +109,13 @@ defineExpose({});
           <small class="text-xs">Serey Odum Hav Trobaek</small>
         </div>
         <div class="descr">
-          <p>Number 1 of Khmer outstanding student exam of Svay Antor district.</p>
+          <ul class="ml-3">
+            <li>Become commune youth.</li>
+            <li>Join event planning development community.</li>
+            <li>
+              Number 1 of Khmer outstanding student exam of Svay Antor district.
+            </li>
+          </ul>
         </div>
       </li>
       <li class="li" style="--accent-color: #4cadad">

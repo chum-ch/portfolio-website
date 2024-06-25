@@ -51,7 +51,7 @@ nav {
   width: 100%;
   z-index: 999;
   padding: 0.5rem;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(3px);
   /* background: #000; */
 }
 .menu {
