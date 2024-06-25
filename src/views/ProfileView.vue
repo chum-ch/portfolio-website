@@ -109,7 +109,7 @@ defineExpose({});
           <small class="text-xs">Serey Odum Hav Trobaek</small>
         </div>
         <div class="descr">
-          <p>I got number 1 of examination Khmer of Svay Antor district.</p>
+          <p>Number 1 of Khmer outstanding student exam of Svay Antor district.</p>
         </div>
       </li>
       <li class="li" style="--accent-color: #4cadad">
@@ -119,7 +119,7 @@ defineExpose({});
           <small class="text-xs">R-ka Meas Samki Meanchey</small>
         </div>
         <div class="descr">
-          <p>I learnt ...</p>
+          <p></p>
         </div>
       </li>
     </ul>
