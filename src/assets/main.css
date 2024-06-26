@@ -25,7 +25,9 @@ body {
     'Helvetica Neue',
     sans-serif;
 }
-
+a {
+  text-decoration: none;
+}
 /* Styles for phones (up to 576px) */
 @media (max-width: 576px) {
   

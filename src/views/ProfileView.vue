@@ -26,7 +26,7 @@ defineExpose({});
   <div class="profile">
     <ul class="time-line">
       <li class="li" style="--accent-color: #01204e">
-        <div class="date">2022 - Present</div>
+        <div class="date">2021 - Present</div>
         <div class="title">
           <h3>Web developer</h3>
           <small class="text-xs">AIML Technologies Co.,Ltd</small>
