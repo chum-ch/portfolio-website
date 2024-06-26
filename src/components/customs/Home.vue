@@ -77,7 +77,7 @@ defineExpose({});
             </h3>
           </div>
           <ButtonPrimevue label="">
-          <a href="src/docs/CHUM_YOEURN_CV.pdf" class="text-white" download>Download CV</a>
+          <a href="../../docs/CHUM_YOEURN_CV.pdf" class="text-white" download>Download CV</a>
           </ButtonPrimevue>
         </div>
       </div>
