@@ -17,7 +17,7 @@ defineProps({
   },
 });
 // Variable
-const cv = './src/docs/CHUM_YOEURN_CV.pdf'
+const cv = 'https://svc-sms.onrender.com/downloads/cv'
 const instance = getCurrentInstance();
 // Functions
 defineExpose({});
