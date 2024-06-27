@@ -17,6 +17,7 @@ defineProps({
   },
 });
 // Variable
+const cv = './src/docs/CHUM_YOEURN_CV.pdf'
 const instance = getCurrentInstance();
 // Functions
 defineExpose({});
@@ -77,7 +78,7 @@ defineExpose({});
             </h3>
           </div>
           <ButtonPrimevue label="">
-          <a href="../../docs/CHUM_YOEURN_CV.pdf" class="text-white" download>Download CV</a>
+          <a :href="cv" class="text-white" download>Download CV</a>
           </ButtonPrimevue>
         </div>
       </div>
